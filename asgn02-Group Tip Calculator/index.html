@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tip Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <h2 class="calculator__title">Tip Calculator</h2>
+
+      <label for="bill" class="calculator__label"> Bill Amount ($) </label>
+      <input
+        type="number"
+        id="bill"
+        class="calculator__input"
+        placeholder="e.g. 50"
+        min="0"
+      />
+
+      <label for="tip" class="calculator__label"> Tip Percentage (%) </label>
+      <input
+        type="number"
+        id="tip"
+        class="calculator__input"
+        placeholder="e.g. 20"
+        min="0"
+      />
+
+      <label for="people" class="calculator__label"> Number of People </label>
+      <input
+        type="number"
+        id="people"
+        class="calculator__input"
+        placeholder="e.g. 2"
+        min="1"
+        aria-describedby="peopleHelp"
+      />
+
+      <small id="peopleHelp"> Must be at least 1 person </small>
+
+      <div class="calculator__result" aria-live="polite">
+        Total per person:
+        <span id="totalPerPerson">$0.00</span>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+<!--I KEPT EVERYTHING THE AI MADE IN THE FINAL REVISION (IT MADE ALL OF THIS) AND MOST OF WHAT WAS IN THE PREVIOUS REVISIONS TO GET TO THAT-->
+
+<!--AFTER IT MADE THE SCAFFOLDING, I HAD IT GO THROUGH EVERYTHING IN THE PROMPT CHECKLIST, THEN ADD THE ABILITY TO INCLUDE MULTIPLE PEOPLE, AND FINALLY IMPLEMENT THE EXACT IMPROVE ACCESSIBILITY PROMPT IN THE INSTRUCTIONS-->
+
+<!--CORRECTNESS WAS CONFIRMED BY ENTERING THE TIP CALCULATOR VALUES IN THE INSTRUCTIONS COMBINED WITH THE LACK OF CONSOLE ERRORS-->
+
+<!--MOST HELPFUL PROMPT: "I’m a beginner. Please generate a minimal, well-commented HTML/CSS/JS scaffold for a tip calculator." (THIS DID THE MOST WORK)-->
+
+<!--NO BUGS ENCOUNTERED-->
+
+<!--THIS SHOWED ME HOW EVENT LISTENERS WORK, HOW THEY KNOW WHEN TO TRIGGER (IN THIS CASE, IN RESPONSE TO ENTRIES IN SPECIFIC INPUT FIELDS), AND WHAT HAPPENS (A FUNCTION RUNNING) WHEN THEY DO-->
