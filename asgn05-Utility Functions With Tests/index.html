@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Utility Functions Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>JavaScript Utility Library</h1>
+    <p>Interactive Demonstrations + Test Suite</p>
+</header>
+
+<section class="card">
+    <h2>1. formatCurrency</h2>
+    <input type="number" id="currencyInput" placeholder="Enter number">
+    <button onclick="demoFormatCurrency()">Format</button>
+    <p id="currencyResult"></p>
+</section>
+
+<section class="card">
+    <h2>2. parseIntegerSafe</h2>
+    <input type="text" id="intInput" placeholder="Enter integer">
+    <button onclick="demoParseInteger()">Parse</button>
+    <p id="intResult"></p>
+</section>
+
+<section class="card">
+    <h2>3. capitalizeWords</h2>
+    <input type="text" id="capInput" placeholder="Enter text">
+    <button onclick="demoCapitalize()">Capitalize</button>
+    <p id="capResult"></p>
+</section>
+
+<section class="card">
+    <h2>4. reverseString</h2>
+    <input type="text" id="reverseInput" placeholder="Enter text">
+    <button onclick="demoReverse()">Reverse</button>
+    <p id="reverseResult"></p>
+</section>
+
+<section class="card">
+    <h2>5. isValidEmail</h2>
+    <input type="text" id="emailInput" placeholder="Enter email">
+    <button onclick="demoEmail()">Validate</button>
+    <p id="emailResult"></p>
+</section>
+
+<section class="card">
+    <h2>6. removeDuplicates</h2>
+    <input type="text" id="arrayInput" placeholder="Comma separated values">
+    <button onclick="demoRemoveDuplicates()">Remove</button>
+    <p id="arrayResult"></p>
+</section>
+
+<section class="card">
+    <h2>7. truncateString</h2>
+    <input type="text" id="truncateInput" placeholder="Enter text">
+    <input type="number" id="truncateLength" placeholder="Length">
+    <button onclick="demoTruncate()">Truncate</button>
+    <p id="truncateResult"></p>
+</section>
+
+<section class="card">
+    <h2>8. debounce (Demo)</h2>
+    <input type="text" id="debounceInput" placeholder="Type quickly...">
+    <p id="debounceResult"></p>
+</section>
+
+<section class="card">
+    <h2>Test Suite</h2>
+    <button onclick="runTests()">Run Tests</button>
+    <pre id="testOutput"></pre>
+</section>
+
+<section class="card">
+    <h2>AI Usage Note</h2>
+    <p>
+        AI was used to generate edge cases and test input ideas for each function.
+        Expected outputs were manually verified before implementation.
+        All logic was reviewed and validated through custom testing.
+    </p>
+</section>
+
+<footer>
+    <p>Utility Functions Project – 2026</p>
+</footer>
+
+<script src="utils.js"></script>
+<script src="tests.js"></script>
+
+</body>
+</html>
