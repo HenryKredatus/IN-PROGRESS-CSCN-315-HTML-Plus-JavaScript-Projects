@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acme Cloud — FAQ</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/template.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>In Class 03</h1>
+        <span class="menu-toggle">&#9776;</span>
+        <ul id="menu">
+          <li><a href="index.html" alt="Home">Home</a></li>
+          <li><a href="#about.html" alt="About Us">About Us</a></li>
+          <li><a href="#gallery.html" alt="Galler">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="grid">
+      <div id="a">
+        <p>Numbers specify year, month, day, hours, minutes, and seconds</p>
+        <p id="setdate"></p>
+        <script>
+          let d = new Date(2018, 2, 24, 10, 33, 30);
+          document.getElementById("setdate").innerHTML = d;
+        </script>
+
+        <script>
+          let now = new Date();
+          document.write(now); //display current date and time
+        </script>
+      </div>
+
+      <div id="b"></div>
+
+      <div id="c">
+        <div id="innerhtml">
+          <p id="greet"></p>
+          <p id="result"></p>
+        </div>
+
+        <div id="innerhtml2">
+          <button type="button" onclick="myname()">Enter Name</button>
+
+          <p id="inner1nam"></p>
+          <button type="button" onclick="mynumber()">Enter Number</button>
+
+          <p id="inner1num"></p>
+        </div>
+
+        <div id="parameters"></div>
+
+        <div id="jsobject">
+          <script src="js/jsobject.js"></script>
+        </div>
+
+        <div id="winsize">
+          <button type="button" onclick="windowsize()">Get Window Size</button>
+        </div>
+
+        <div id="screenres">
+          <button type="button" onclick="getResolution()">
+            Get Resolution
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/innerhtml.js"></script>
+    <script src="js/innerhtml2.js"></script>
+    <script src="js/winsize.js"></script>
+    <script src="js/screenres.js"></script>
+  </body>
+</html>
